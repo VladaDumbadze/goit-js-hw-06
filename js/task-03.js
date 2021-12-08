@@ -36,8 +36,6 @@ lolEl.forEach(element => {
  const getElemLol = element.querySelector('.img')
   getElemLol.style.width = "300px";
   getElemLol.style.height = "150px";
-  
-
 
   
 });

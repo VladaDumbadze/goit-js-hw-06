@@ -1,5 +1,5 @@
 const inputEl = document.getElementById("validation-input");
-debugger
+
 const validTextValue = inputEl.dataset.length;
 const getValid = () => {
     const value = inputEl.value.length
