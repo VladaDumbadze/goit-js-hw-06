@@ -27,6 +27,8 @@ galleryEl.insertAdjacentHTML("beforeend", markup);
 
 galleryEl.style.display = "flex";
 galleryEl.style.listStyle = 'none';
+// galleryEl.style.justifyContent = "flex-start";
+
 
 const lolEl = document.querySelectorAll('li');
 lolEl.forEach(element => {

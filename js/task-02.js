@@ -7,11 +7,16 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.getElementById('ingredients');
+const listEl = document.getElementById('ingredients');
 
-const newTechnologies = ["React", "TypeScript", "Node.js"];
-const markup = ingredients
-  .map((ingredient) => `<li class="list-item">${ingredient}</li>`)
-  .join("");
+ 
+const elements = ingredients.map(option => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("list-item");
+  listItem.textContent = option;
 
-list.insertAdjacentHTML("beforeend", markup);
+  return listItem;
+}) 
+
+
+listEl.append(...elements);
